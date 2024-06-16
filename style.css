@@ -73,25 +73,27 @@ span {
 /* _____________RESPONSIVE__________________ */
 
 
-@media (425px <= width <= 768px) {
-    
+@media (320px <=width <=768px) {
+
     body {
         background-color: rgb(198, 211, 203);
     }
+
     header {
         position: relative;
         justify-content: flex-end;
         background-color: black;
     }
-    
-    .fa-bars, .fa-xmark {
+
+    .fa-bars,
+    .fa-xmark {
         display: block !important;
     }
 
     .logo {
         margin: 0;
     }
-    
+
     .logos {
         margin: 0;
         width: 100%;
@@ -99,7 +101,7 @@ span {
         justify-content: space-between;
         align-items: center;
     }
-    
+
     nav {
         background-color: rgb(147, 0, 252);
         position: absolute;
@@ -113,16 +115,70 @@ span {
         z-index: 1;
         transition: 0.7s;
     }
-    
+
     nav ul {
         flex-direction: column;
         align-items: start;
         gap: 20px;
-        margin:10% 0 0;
+        margin: 10% 0 0;
     }
 
-    
+
     nav ul li a {
         color: #fff;
     }
 }
+
+/* __________________________________________________ */
+/* 
+@media (375px <=width <=425px) {
+    header {
+        position: relative;
+        justify-content: flex-end;
+        background-color: black;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .logos {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .fa-bars,
+    .fa-xmark {
+        display: block !important;
+    }
+
+    nav {
+        background-color: rgb(147, 0, 252);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        transition: 0.7s;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        margin: 10% 0 0;
+    }
+
+
+    nav ul li a {
+        color: #fff;
+    }
+
+} */
